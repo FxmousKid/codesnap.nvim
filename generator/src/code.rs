@@ -47,7 +47,7 @@ pub fn calc_wh_with_min_width(text: &str, char_wdith: f32, line_height: f32) -> 
 // The tab character is incorrectly render using cosmic, need to replace all tab with space
 // before render the code
 fn replace_tab_to_space(text: &str) -> String {
-    let spaces = " ".repeat(2);
+    let spaces = " ".repeat(8);
 
     str::replace(text, "\t", &spaces)
 }
